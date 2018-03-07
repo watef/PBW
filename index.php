@@ -1,3 +1,11 @@
+ <?php  
+$bg[0] = "white";  
+$bg[1] = "yellow";  
+$bg[2] = "red"; 
+$bg[3] = "green";  
+$warna=array_rand($bg,2);  
+?> 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,8 +16,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Teknologi Informasi-ITS</title>
-
+    <title >Teknologi Informasi-ITS</title>
+    <link rel="stylesheet" href="style.css">
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -23,10 +31,10 @@
   </head>
 
   <body>
-
+      
     <h1 class="site-heading text-center text-white d-none d-lg-block">
       <p style="margin-top: -50px; font-family:serif ; margin-bottom: -20px ; font-size: 75% ; color:#E69534">INSTITUT TEKNOLOGI SEPULUH NOPEMBER</p>
-      <p style="margin-top: -20px ; font-family: monospace ; font-size: 70px">TEKNOLOGI INFORMASI</p>
+      <p style="margin-top: -20px ; font-family: monospace ; font-size: 70px; color : <?php echo $bg[$warna[0]];?>">TEKNOLOGI INFORMASI</p>
         <p style="margin-top: -35px ; font-size: 25px ; margin-bottom: -70px  " >Fakultas Teknologi Informasi dan Komunikasi</p>
 
     </h1>
@@ -34,28 +42,28 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
-        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Teknologi Informasi</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+              <a class="nav-link text-uppercase text-expanded" href="index.php">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="about.html">Kenapa TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="mengapa.php">Kenapa TI</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="products.html">Fasilitas TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="fasilitas.php">Fasilitas TI</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="store.html">Peluang Kerja TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="peluang.php">Peluang Kerja TI</a>
               </li>
              <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="terakhir.html">Sistem Pendaftaran TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="terakhir.php">Sistem Pendaftaran TI</a>
             </li>
           </ul>
         </div>
@@ -65,7 +73,7 @@
     <section class="page-section clearfix">
       <div class="container">
         <div class="intro">
-          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/intro.jpg" alt="intro">
+          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/intro.png" alt="intro">
           <div class="intro-text left-0 text-center bg-faded p-5 rounded" style="margin-top: -5%; margin-left: -5%">
               
             <h2 class="section-heading mb-4">
@@ -77,14 +85,14 @@
                <h2 class="section-heading mb-4">
               <p class="section-heading-upper" style="font-size: 30px; margin-top: -10px">misi</p>
             </h2>
-              <ol class="mb-3" style="margin-top: -30px; text-align: justify ; margin-left: -30px" >
+              <ol class="mb-3" style="margin-top: -30px; text-align: justify ; margin-left: -5px" >
                  
-                <li>Menyelenggaralak pendidikan dan pengajaran Teknologi Informasi dengan menggunakan kurikulum yang adaptif, berorientasi ke masa depan dan didukung SDM yang berkualitas serta fasilitas yang memadai.
+                <li>    Menyelenggaralak pendidikan dan pengajaran Teknologi Informasi dengan menggunakan kurikulum yang adaptif, berorientasi ke masa depan dan didukung SDM yang berkualitas serta fasilitas yang memadai.
                     </li>
-                     <li>Melaksanakan penelitian yang bermutu di bidang Keamanan Siber dan <i>Internet of Thing</i> untuk teknologi <i>Smart City</i>.
+                     <li>   Melaksanakan penelitian yang bermutu di bidang Keamanan Siber dan <i>Internet of Thing</i> untuk teknologi <i>Smart City</i>.
                     </li>
-                    <li>Menjalin kemitraan dengan instansi dalam maupun luar negeri.</li>
-                    <li>Menyelenggarakan pengabdian kepada masyarakat berupa pelatihan, penyuluhan, penerapan hasil penelitian untuk pengembangan potensi dan pemberdayaan masyarakat daerah</li>
+                    <li>    Menjalin kemitraan dengan instansi dalam maupun luar negeri.</li>
+                    <li>    Menyelenggarakan pengabdian kepada masyarakat berupa pelatihan, penyuluhan, penerapan hasil penelitian untuk pengembangan potensi dan pemberdayaan masyarakat daerah</li>
               </ol>
                
               
@@ -105,6 +113,30 @@
                 <p class="section-heading-upper">Contact</p>
               </h2>
               <p class="mb-2">teknologi.informasi@its.ac.id</p>
+                
+                <div class="form">
+          <div id="sendmessage">Terkirim, Terimakasih</div>
+          <div id="errormessage"></div>
+          <form action="submit.php" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+                
             </div>
           </div>
         </div>
@@ -120,6 +152,8 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      
+     
 
   </body>
 

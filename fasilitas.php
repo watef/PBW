@@ -1,3 +1,11 @@
+ <?php  
+$bg[0] = "white";  
+$bg[1] = "yellow";  
+$bg[2] = "red"; 
+$bg[3] = "green";  
+$warna=array_rand($bg,2);  
+?> 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,34 +34,34 @@
 
      <h1 class="site-heading text-center text-white d-none d-lg-block">
       <p style="margin-top: -50px; font-family:serif ; margin-bottom: -20px ; font-size: 40px ; color:#E69534; text-transform: capitalize">Fasilitas</p>
-      <p style="margin-top: -10px ; font-family: monospace ; font-size: 70px; margin-bottom: -100px">TEKNOLOGI INFORMASI</p>
+      <p style="margin-top: -10px ; font-family: monospace ; font-size: 70px; margin-bottom: -100px; color : <?php echo $bg[$warna[0]];?>">TEKNOLOGI INFORMASI</p>
        
       </h1>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
-        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Teknologi Informasi</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+              <a class="nav-link text-uppercase text-expanded" href="index.php">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="about.html">Kenapa TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="mengapa.php">Kenapa TI</a>
             </li>
             <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="products.html">Fasilitas TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="fasilitas.php">Fasilitas TI</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="store.html">Peluang Kerja TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="peluang.php">Peluang Kerja TI</a>
               </li>
              <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="terakhir.html">Sistem Pendaftaran TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="terakhir.php">Sistem Pendaftaran TI</a>
             </li>
           </ul>
         </div>
