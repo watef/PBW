@@ -2,7 +2,10 @@
 $bg[0] = "white";  
 $bg[1] = "yellow";  
 $bg[2] = "red"; 
-$bg[3] = "green";  
+$bg[3] = "aqua";
+$bg[4] = "orange";  
+$bg[5] = "black"; 
+$bg[6] = "pink";  
 $warna=array_rand($bg,2);  
 ?> 
 

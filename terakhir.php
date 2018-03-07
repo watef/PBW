@@ -2,7 +2,10 @@
 $bg[0] = "white";  
 $bg[1] = "yellow";  
 $bg[2] = "red"; 
-$bg[3] = "green";  
+$bg[3] = "aqua";
+$bg[4] = "orange";  
+$bg[5] = "black"; 
+$bg[6] = "pink";  
 $warna=array_rand($bg,2);  
 ?> 
 
@@ -105,24 +108,72 @@ $warna=array_rand($bg,2);
           <div class="col-xl-5 mx-auto">
             <div class="cta-inner text-center rounded">
               <h2 class="section-heading mb-2">
-                <p class="section-heading-upper">Contact</p>
+                <p class="section-heading-upper" style="margin-top : -20px">Contact</p>
               </h2>
-              <p class="mb-2">teknologi.informasi@its.ac.id</p>
+              <p class="mb-2" style="margin-top : -20px">teknologi.informasi@its.ac.id</p>
                 
                  <div class="container">
+                     <hr>
             <div style="text-align : center">
-           <p style="font-size : 20px;"> website ini telah dikunjungi</p>
+           <p style="font-size : 20px; margin-top : -20px"> website ini telah dikunjungi</p>
             <?php 
             include ("counter.php");
             echo "<p style='color:brown; font-size:35px; text-align=center; font-weight:enchant_broker_list_dicts(broker)'> $kunjungan[0] kali </p>";
             ?> 
              </div>   
     </div>
+                
             </div>
+              
+          </div>
+            
+        </div>
+          
+          <div class="mail" style="text-align: center; margin-top: 5px;">
+	<form action="send_mail.php" method="post">
+		
+		<div>
+			<label for="name">Name</label>
+			<input type="text" name="name">
+		</div>
+
+		<div>
+			<label for="email">Email</label>
+			<input type="text" name="email">
+		</div>
+
+		<div>
+			<label for="subject">Subject</label>
+			<input type="text" name="subject">
+		</div>
+
+		<div><p style="margin-top:-10px">
+                <label for="message">Message</label>
+            </p>
+			<textarea name="message" id="" cols="47" rows="3" style="margin-top:-25px"></textarea>
+            
+			
+		</div>
+
+		<div><input type="submit" value="Send email"></div>
+
+	</form>
+</div>
+      </div>
+    </section>
+      
+      
+      <!--section class="page-section cta" style="margin-top : -80px">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5 mx-auto">
+            
           </div>
         </div>
       </div>
-    </section>
+    </section-->
+      
+      
 
     <footer class="footer text-faded text-center py-5">
       <div class="container">
