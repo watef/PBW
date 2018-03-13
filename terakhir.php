@@ -1,4 +1,5 @@
- <?php  
+
+<?php  
 $bg[0] = "white";  
 $bg[1] = "yellow";  
 $bg[2] = "red"; 
@@ -44,7 +45,7 @@ $warna=array_rand($bg,2);
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
-        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Teknologi Informasi</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -105,7 +106,7 @@ $warna=array_rand($bg,2);
     <section class="page-section cta">
       <div class="container">
         <div class="row">
-          <div class="col-xl-5 mx-auto">
+          <div class="col-xl-8 mx-auto">
             <div class="cta-inner text-center rounded">
               <h2 class="section-heading mb-2">
                 <p class="section-heading-upper" style="margin-top : -20px">Contact</p>
@@ -115,7 +116,7 @@ $warna=array_rand($bg,2);
                  <div class="container">
                      <hr>
             <div style="text-align : center">
-           <p style="font-size : 20px; margin-top : -20px"> website ini telah dikunjungi</p>
+           <p style="font-size : 20px; margin-top : -20px"> terimakasih atas kunjungannya, website ini telah dikunjungi</p>
             <?php 
             include ("counter.php");
             echo "<p style='color:brown; font-size:35px; text-align=center; font-weight:enchant_broker_list_dicts(broker)'> $kunjungan[0] kali </p>";
@@ -128,29 +129,34 @@ $warna=array_rand($bg,2);
           </div>
             
         </div>
-          
-          <div class="mail" style="text-align: center; margin-top: 5px;">
+       
+            </div>
+          </section>
+         
+        <section class="page-section cta" style="margin-top : -80px">
+      <div class="container">
+            <div class="mail" style="text-align: center; margin-top: 5px;">
 	<form action="send_mail.php" method="post">
-		
+		<p style="font-size : 30px; margin-top: -150px;font-family: monospace "><b>Silahkan tinggalkan pertanyan / komentar!</b></p>
 		<div>
-			<label for="name">Name</label>
+			<label for="name"><b>Name</b></label>
 			<input type="text" name="name">
 		</div>
 
 		<div>
-			<label for="email">Email</label>
+			<label for="email"><b>Email</b></label>
 			<input type="text" name="email">
 		</div>
 
-		<div>
+		<!--div>
 			<label for="subject">Subject</label>
 			<input type="text" name="subject">
-		</div>
+		</div-->
 
 		<div><p style="margin-top:-10px">
-                <label for="message">Message</label>
+                <label for="message"><b>Message</b></label>
             </p>
-			<textarea name="message" id="" cols="47" rows="3" style="margin-top:-25px"></textarea>
+			<textarea name="message" id="" cols="40" rows="3" style="margin-top:-25px"></textarea>
             
 			
 		</div>

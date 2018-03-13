@@ -42,7 +42,7 @@ $warna=array_rand($bg,2);
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
-        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Teknologi Informasi</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -70,7 +70,7 @@ $warna=array_rand($bg,2);
       </div>
     </nav>
 
-    <section class="page-section cta" style="margin-bottom: 100px">
+    <!--section class="page-section cta" style="margin-bottom: 100px">
       <div class="container" style="margin-top: -100px">
         <div class="row">
           <div class="col-xl-9 mx-auto" style="margin-top: -50px">
@@ -85,10 +85,11 @@ $warna=array_rand($bg,2);
           </div>
         </div>
       </div>
-    </section>
+    </section-->
 
     <section class="page-section about-heading">
       <div class="container">
+          <p style="font-size : 50px; color : white; text-align:center; margin-top:-60px">Pekerjaan untuk Mereka Lulusan IT</p>
         <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/latar.png" alt="">
         <div class="about-heading-content">
           <div class="row">

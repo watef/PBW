@@ -1,4 +1,5 @@
- <?php  
+
+<?php  
 $bg[0] = "white";  
 $bg[1] = "yellow";  
 $bg[2] = "red"; 
