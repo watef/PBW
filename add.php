@@ -81,30 +81,32 @@ $warna=array_rand($bg,2);
 </head>
  
 <body>
-	<a href="komentar.php">Go to Home</a>
+     <p style="font-size:20px;  text-align:center; color=yellow;  margin-top:25px">
+	<a href="komentar.php" style="color:yellow;">Back to Komentar</a>
+    </p>
 	<br/><br/>
  
-	<form action="add.php" method="post" name="form1">
+	<form action="add.php" method="post" name="form1" style="text-align:center" >
 		<table width="25%" border="0">
 			<tr> 
-				<td>Name</td>
-				<td><input type="text" name="name"></td>
+				<td style="color:white; font-size:20px">Name</td>
+				<td><input type="text" name="name" style="width:400px"></td>
 			</tr>
 			<tr> 
-				<td>Email</td>
-				<td><input type="text" name="email"></td>
+				<td style="color:white; font-size:20px">Email</td>
+				<td><input type="text" name="email" style="width:400px"></td>
 			</tr>
 			<tr> 
-				<td>komentar</td>
-				<td><input type="text" name="komentar"></td>
+				<td style="color:white; font-size:20px">Komentar</td>
+				<td><input type="text" name="komentar" style="width:400px; height:150px"></td>
 			</tr>
 			<tr> 
 				<td></td>
-				<td><input type="submit" name="Submit" value="Add"></td>
+				<td><input type="submit" name="Submit" value="Add" style="margin-top:10px; margin-botton:-10px "></td>
 			</tr>
 		</table>
 	</form>
-	
+    <p style='text-align:center; font-color:white; font-size:20px'>
 	<?php
  
 	// Check If form submitted, insert form data into users table.
@@ -120,9 +122,17 @@ $warna=array_rand($bg,2);
 		$result = mysqli_query($mysqli, "INSERT INTO users(name,email,komentar) VALUES('$name','$email','$komentar')");
 		
 		// Show message when user added
-		echo "User added successfully. <a href='komentar.php'>View Users</a>";
+        //echo
+            //"<p align=\"center\"></p>";
+        
+        echo "<font color='white'>Terimakasi atas Komentarnya</font><br>";
+        
 	}
 	?>
+        <!--p style="font-size:20px;  text-align:center; color=yellow;  margin-top:25px">
+	<a href="komentar.php" style="color:yellow;">Baca Komentar</a>
+	<br/><br/-->
+    </p>
 </body>
 </html>
 
