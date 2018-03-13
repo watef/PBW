@@ -67,6 +67,8 @@ $warna=array_rand($bg,2);
               </li>
              <li class="nav-item active px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="terakhir.php">Sistem Pendaftaran TI</a>
+                  <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="komentar.php">Komentar</a>
             </li>
           </ul>
         </div>
@@ -136,8 +138,9 @@ $warna=array_rand($bg,2);
         <section class="page-section cta" style="margin-top : -80px">
       <div class="container">
             <div class="mail" style="text-align: center; margin-top: 5px;">
-	<form action="send_mail.php" method="post">
-		<p style="font-size : 30px; margin-top: -150px;font-family: monospace "><b>Silahkan tinggalkan pertanyan / komentar!</b></p>
+	<form action="send_mail.php" method="post" >
+        
+		<p style="font-size : 30px; margin-top: -150px;font-family: monospace "><b>Silahkan tinggalkan pertanyaan</b></p>
 		<div>
 			<label for="name"><b>Name</b></label>
 			<input type="text" name="name">
@@ -161,7 +164,9 @@ $warna=array_rand($bg,2);
 			
 		</div>
 
-		<div><input type="submit" value="Send email"></div>
+		<div>
+            <input type="submit" value="Send email" >
+        </div>
 
 	</form>
 </div>

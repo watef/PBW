@@ -65,6 +65,8 @@ $warna=array_rand($bg,2);
               </li>
              <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="terakhir.php">Sistem Pendaftaran TI</a>
+             <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="komentar.php">Komentar</a>
             </li>
           </ul>
         </div>
