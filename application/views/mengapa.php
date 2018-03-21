@@ -22,14 +22,14 @@ $warna=array_rand($bg,2);
     <title>kenapa teknologi informasi</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<?php echo base_url()?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>aset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="<?php echo base_url()?>assets/css/business-casual.min.css" rel="stylesheet">
+    <link href="aset/css/business-casual.min.css" rel="stylesheet">
 
   </head>
 
@@ -58,23 +58,23 @@ $warna=array_rand($bg,2);
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome">Home
+              <a class="nav-link text-uppercase text-expanded" href="index.php">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/mengapa">Kenapa TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="mengapa.php">Kenapa TI</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/fasilitas">Fasilitas TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="fasilitas.php">Fasilitas TI</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/peluang">Peluang Kerja TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="peluang.php">Peluang Kerja TI</a>
               </li>
              <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/terakhir">Sistem Pendaftaran TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="terakhir.php">Sistem Pendaftaran TI</a>
                  <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/komentar">Komentar</a>
+              <a class="nav-link text-uppercase text-expanded" href="komentar.php">Komentar</a>
             </li>
           </ul>
         </div>
@@ -83,7 +83,7 @@ $warna=array_rand($bg,2);
 
     <section class="page-section about-heading">
       <div class="container">
-        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="<?php echo base_url()?>assets/img/about.jpg" alt="">
+        <img class="aset/img-fluid rounded about-heading-img mb-3 mb-lg-0" src="aset/img/about.jpg" alt="">
         <div class="about-heading-content">
           <div class="row">
             <div class="col-xl-9 col-lg-10 mx-auto">
@@ -151,7 +151,7 @@ $warna=array_rand($bg,2);
       <div class="container"  style="width: 500px ; height: 30px ; margin-bottom: 240px ;margin-left: 100px; margin-top: -125px">
             <div class="cta-inner text-center rounded">
               <h2 >
-                    <img src="<?php echo base_url()?>assets/img/wiranto.png" alt="" style="margin-top: -30px" >
+                    <img src="aset/img/wiranto.png" alt="" style="margin-top: -30px" >
                   <p class="section-heading-upper" style="font-size: 20px">Wiranto - <i>Menko Polhukam</i></p>
               </h2>
               <p class="mb-1" style="margin-top: -20px">
@@ -163,7 +163,7 @@ $warna=array_rand($bg,2);
           <div class="container"  style="width: 500px ; height: 30px ; margin-top: -270px ;margin-left: 750px">
             <div class="cta-inner text-center rounded">
               <h2 >
-                    <img src="<?php echo base_url()?>assets/img/rudi.png" alt="" style="margin-top: -30px" >
+                    <img src="aset/img/rudi.png" alt="" style="margin-top: -30px" >
                   <p class="section-heading-upper" style="font-size: 20px">Rudiantara - <i>Menkominfo</i></p>
               </h2>
               <p class="mb-1" style="margin-top: -20px">
@@ -178,7 +178,7 @@ $warna=array_rand($bg,2);
            <div class="container"  style="width: 500px ; height: 30px ; margin-top: -70px ;margin-left: 450px">
             <div class="cta-inner text-center rounded">
               <h2 >
-                    <img src="<?php echo base_url()?>assets/img/bill.png" alt="" style="margin-top: -30px" >
+                    <img src="aset/img/bill.png" alt="" style="margin-top: -30px" >
                   <p class="section-heading-upper" style="font-size: 20px">Bill Gates - <i>Microsoft</i></p>
               </h2>
               <p class="mb-1" style="margin-top: -20px">
@@ -196,8 +196,8 @@ $warna=array_rand($bg,2);
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="<?php echo base_url()?>assets/vendor/jquery/jquery.min.js"></script>
-    <script src="<?php echo base_url()?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="aset/vendor/jquery/jquery.min.js"></script>
+    <script src="aset/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
 

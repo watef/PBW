@@ -23,14 +23,14 @@ $warna=array_rand($bg,2);
     <title>Teknologi Informasi-ITS</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<?php echo base_url()?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="aset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
     <!-- Custom styles for this Stemplate -->
-    <link href="<?php echo base_url()?>assets/css/business-casual.min.css" rel="stylesheet">
+    <link href="aset/css/business-casual.min.css" rel="stylesheet">
 
   </head>
 
@@ -52,23 +52,23 @@ $warna=array_rand($bg,2);
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome">Home
+              <a class="nav-link text-uppercase text-expanded" href="index.php">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
              <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/mengapa">Kenapa TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="mengapa.php">Kenapa TI</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/fasilitas">Fasilitas TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="fasilitas.php">Fasilitas TI</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/peluang">Peluang Kerja TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="peluang.php">Peluang Kerja TI</a>
               </li>
              <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/terakhir">Sistem Pendaftaran TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="terakhir.php">Sistem Pendaftaran TI</a>
                   <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/komentar">Komentar</a>
+              <a class="nav-link text-uppercase text-expanded" href="komentar.php">Komentar</a>
             </li>
           </ul>
         </div>
@@ -78,7 +78,7 @@ $warna=array_rand($bg,2);
     <section class="page-section clearfix">
       <div class="container">
         <div class="intro">
-          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="<?php echo base_url()?>assets/img/terakhir.jpg" alt="intro">
+          <img class="aset/intro-img img-fluid mb-3 mb-lg-0 rounded" src="aset/img/terakhir.jpg" alt="intro">
           <div class="intro-text left-0 text-center bg-faded p-5 rounded" style="margin-top: -5%; margin-left: -5%">
               
             <h2 class="section-heading mb-4">
@@ -193,8 +193,8 @@ $warna=array_rand($bg,2);
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="<?php echo base_url()?>assets/vendor/jquery/jquery.min.js"></script>
-    <script src="<?php echo base_url()?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="aset/vendor/jquery/jquery.min.js"></script>
+    <script src="aset/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
 

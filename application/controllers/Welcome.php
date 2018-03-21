@@ -18,28 +18,34 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function __construct()
+	{
+parent::__construct();
+$this->load->helper('url');
+
+	}
 	public function index()
-	{
-		$this->load->view('index2');
-	}
+		{
+			$this->load->view('index2');
+		}
 	public function mengapa()
-	{
-		$this->load->view('mengapa');
-	}
+		{
+			$this->load->view('mengapa');
+		}
 	public function fasilitas()
-	{
-		$this->load->view('fasilitas');
-	}
+		{
+			$this->load->view('fasilitas');
+		}
 	public function peluang()
-	{
-		$this->load->view('peluang');
-	}
+		{
+			$this->load->view('peluang');
+		}
 	public function terakhir()
-	{
-		$this->load->view('terakhir');
-	}
+		{
+			$this->load->view('terakhir');
+		}
 	public function komentar()
-	{
-		$this->load->view('komentar');
-	}
+		{
+			$this->load->view('komentar');
+		}
 }
