@@ -64,7 +64,7 @@ class Welcome extends CI_Controller {
 		$this->modelkomen->delete($id);
 		redirect('Welcome/komentar');
 	}
-	
+
 
 	/*public function edit($id)
 	{
@@ -121,4 +121,5 @@ class Welcome extends CI_Controller {
 		$data['users'] = $this->modelkomen->getusers();
 		$this->load->view('download', $data);
 	}
+	
 }

@@ -113,6 +113,8 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
   
     </table>
     <center><form action="download"><input style="color: black; padding: 5px;" type="submit" value="Download Comments"></form></center>
+    
+    <center><a style='color:orange; font-weight: bold; font-size: 40px' href="<?php echo base_url()?>Chart">Report</a></center>
     <br>
 </body>
 </html>
