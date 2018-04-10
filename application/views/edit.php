@@ -25,14 +25,14 @@ $warna=array_rand($bg,2);
     <title>Teknologi Informasi-ITS</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
     <!-- Custom styles for this Stemplate -->
-    <link href="css/business-casual.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>assets/css/business-casual.min.css" rel="stylesheet">
 
   </head>
 
@@ -54,23 +54,23 @@ $warna=array_rand($bg,2);
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="index.php">Home
+              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
              <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="mengapa.php">Kenapa TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/mengapa">Kenapa TI</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="fasilitas.php">Fasilitas TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/fasilitas">Fasilitas TI</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="peluang.php">Peluang Kerja TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/peluang">Peluang Kerja TI</a>
               </li>
              <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="terakhir.php">Sistem Pendaftaran TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/terakhir">Sistem Pendaftaran TI</a>
                  <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="komentar.php">Komentar</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/komentar">Komentar</a>
             </li>
           </ul>
         </div>
@@ -78,27 +78,27 @@ $warna=array_rand($bg,2);
     </nav>
       
       
-      <?php
+      <!--?php
 // include database connection file
 include_once("config.php");
  
 // Check if form is submitted for user update, then redirect to homepage after update
-if(isset($_POST['update']))
-{	
-	$id = $_POST['id'];
+//if(isset($_POST['update']))
+//{	
+	//$id = $_POST['id'];
 	
-	$name=$_POST['name'];
-	$email=$_POST['email'];
-    $komentar=$_POST['komentar'];
+	//$name=$_POST['name'];
+	//$email=$_POST['email'];
+    //$komentar=$_POST['komentar'];
 		
 	// update user data
 	$result = mysqli_query($mysqli, "UPDATE users SET name='$name',email='$email',komentar='$komentar' WHERE id=$id");
 	
 	// Redirect to homepage to display updated user in list
-	header("Location: komentar.php");
-}
-?>
-<?php
+	//header("Location: komentar.php");
+//}
+?-->
+<!--?php
 // Display selected user data based on id
 // Getting id from url
 $id = $_GET['id'];
@@ -112,7 +112,7 @@ while($user_data = mysqli_fetch_array($result))
 	$email = $user_data['email'];
 	$komentar = $user_data['komentar'];
 }
-?>
+?-->
 <html>
 <head>	
 	<title>Edit User Data</title>
@@ -121,23 +121,28 @@ while($user_data = mysqli_fetch_array($result))
 <body>
         
      <p style="font-size:20px;  text-align:center; color=yellow;  margin-top:25px">
-	<a href="komentar.php" style="color:yellow;">Back to Komentar</a>
+	<a href="<?php echo base_url()?>Welcome/komentar" style="color:yellow;">Back to Komentar</a>
     </p>
 	<br/><br/>
 	
-	<form name="update_user" method="post" action="edit.php">
+	<form name="update_user" method="post" action="Welcome/edited">
 		<table border="0">
 			<tr> 
-				<td style="color:white; font-size:20px">Name</td>
-				<td><input type="text" name="name" style="width:400px" value=<?php echo $name;?>></td>
+				<td style="color:white; font-size:20px">Name
+        </td>
+				<td>
+          <input type="text" name="name" style="width:400px" value="<?php echo $id ?>">
+        </td>
 			</tr>
 			<tr> 
 				<td style="color:white; font-size:20px">Email</td>
-				<td><input type="text" name="email" style="width:400px" value=<?php echo $email;?>></td>
+				<td>
+          <input type="text" name="email" style="width:400px" value="<?php echo $email ?>"></td>
 			</tr>
 			<tr> 
 				<td style="color:white; font-size:20px">Komentar</td>
-				<td><input type="text" name="komentar" style="width:400px; height:150px" value=<?php echo $komentar;?>></td>
+				<td>
+          <input type="text" name="komentar" style="width:400px; height:150px" value="<?php echo $komentar ?>"></td>
 			</tr>
 			<tr>
 				<td><input type="hidden" name="id" value=<?php echo $_GET['id'];?>></td>
@@ -159,8 +164,8 @@ while($user_data = mysqli_fetch_array($result))
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?php echo base_url()?>asset/vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url()?>asset/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
 

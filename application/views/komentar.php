@@ -23,14 +23,14 @@ $warna=array_rand($bg,2);
     <title>Teknologi Informasi-ITS</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="aset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
     <!-- Custom styles for this Stemplate -->
-    <link href="aset/css/business-casual.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>assets/css/business-casual.min.css" rel="stylesheet">
 
   </head>
 
@@ -52,23 +52,23 @@ $warna=array_rand($bg,2);
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="index.php">Home
+              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
              <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="mengapa.php">Kenapa TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/mengapa">Kenapa TI</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="fasilitas.php">Fasilitas TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/fasilitas">Fasilitas TI</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="peluang.php">Peluang Kerja TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/peluang">Peluang Kerja TI</a>
               </li>
              <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="terakhir.php">Sistem Pendaftaran TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/terakhir">Sistem Pendaftaran TI</a>
                  <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="komentar.php">Komentar</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/komentar">Komentar</a>
             </li>
           </ul>
         </div>
@@ -94,7 +94,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
  
 <body>
     <p style="font-size:20px;  text-align:center;">
-<a href="add.php" style="color:yellow;">Silahkan Tambahkan Komentar Baru</a>
+<a href="<?php echo base_url()?>Welcome/add" style="color:yellow;">Silahkan Tambahkan Komentar Baru</a>
     </p>
  
     <table width='100%' border=1  style="background-color: white; margin-bottom: 30px" >
@@ -102,16 +102,18 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
     <tr>
         <th>Name</th> <th>Komentar</th> <th>Email</th> <th>Update</th>
     </tr>
-    <?php  
-    while($user_data = mysqli_fetch_array($result)) {         
-        echo "<tr>";
-        echo "<td>".$user_data['name']."</td>";
-        echo "<td>".$user_data['email']."</td>";
-        echo "<td>".$user_data['komentar']."</td>";    
-        echo "<td><a href='edit.php?id=$user_data[id]'>Edit</a> | <a href='delete.php?id=$user_data[id]'>Delete</a></td></tr>";        
-    }
-    ?>
+    <?php foreach ($users as $u) { ?><tr>
+      <td><?= $u ['name']?></td>
+      <td><?= $u ['email']?></td>
+      <td><?= $u ['komentar']?></td>
+      <td> <a href="<?php echo base_url().'Welcome/delete/'.$u['id']?>">delete </a>
+           | <a href="<?php echo base_url().'Welcome/edit/'.$u['id']?>">edit </a>
+      </td></tr>
+ <?php }?>
+  
     </table>
+    <center><form action="download"><input style="color: black; padding: 5px;" type="submit" value="Download Comments"></form></center>
+    <br>
 </body>
 </html>
       
@@ -123,8 +125,8 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="aset/vendor/jquery/jquery.min.js"></script>
-    <script src="aset/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?php echo base_url()?>assets/vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url()?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
 

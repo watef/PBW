@@ -163,13 +163,9 @@ $warna=array_rand($bg,2);
          
         <section class="page-section cta" style="margin-top : -80px">
       <div class="container">
-        <?php echo form_open('insert_ctrl'); ?>
             <div class="mail" style="text-align: center; margin-top: 5px;">
-	         <form action="send_mail.php" method="post" >
-        <?php if (isset($message)) { ?>
-        <CENTER><h3 style="color:green;">Data inserted successfully</h3></CENTER><br>
-        <?php } ?>
-
+	<form action="send_mail.php" method="post" >
+        
 		<p style="font-size : 30px; margin-top: -150px;font-family: monospace "><b>Silahkan tinggalkan pertanyan / komentar!</b></p>
 		<div>
 			<label for="name"><b>Name</b></label>

@@ -22,14 +22,14 @@ $warna=array_rand($bg,2);
     <title>Teknologi Informasi-ITS</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
     <!-- Custom styles for this Stemplate -->
-    <link href="css/business-casual.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>assets/css/business-casual.min.css" rel="stylesheet">
 
   </head>
 
@@ -51,23 +51,23 @@ $warna=array_rand($bg,2);
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="index.php">Home
+              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
              <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="mengapa.php">Kenapa TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/mengapa">Kenapa TI</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="fasilitas.php">Fasilitas TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/fasilitas">Fasilitas TI</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="peluang.php">Peluang Kerja TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/peluang">Peluang Kerja TI</a>
               </li>
              <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="terakhir.php">Sistem Pendaftaran TI</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/terakhir">Sistem Pendaftaran TI</a>
                  <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="komentar.php">Komentar</a>
+              <a class="nav-link text-uppercase text-expanded" href="<?php echo base_url()?>Welcome/komentar">Komentar</a>
             </li>
           </ul>
         </div>
@@ -82,11 +82,11 @@ $warna=array_rand($bg,2);
  
 <body>
      <p style="font-size:20px;  text-align:center; color=yellow;  margin-top:25px">
-	<a href="komentar.php" style="color:yellow;">Back to Komentar</a>
+	<a href="<?php echo base_url()?>Welcome/komentar" style="color:yellow;">Back to Komentar</a>
     </p>
 	<br/><br/>
  
-	<form action="add.php" method="post" name="form1" style="text-align:center" >
+	<form action="<?php echo base_url(). 'Welcome/added'; ?>" method="post" name="form1" style="text-align:center" >
 		<table width="25%" border="0">
 			<tr> 
 				<td style="color:white; font-size:20px">Name</td>
@@ -110,16 +110,16 @@ $warna=array_rand($bg,2);
 	<?php
  
 	// Check If form submitted, insert form data into users table.
-	if(isset($_POST['Submit'])) {
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$komentar = $_POST['komentar'];
+	//if(isset($_POST['Submit'])) {
+		//$name = $_POST['name'];
+		//$email = $_POST['email'];
+		//$komentar = $_POST['komentar'];
 		
 		// include database connection file
 		include_once("config.php");
 				
 		// Insert user data into table
-		$result = mysqli_query($mysqli, "INSERT INTO users(name,email,komentar) VALUES('$name','$email','$komentar')");
+		//$result = mysqli_query($mysqli, "INSERT INTO users(name,email,komentar) VALUES('$name','$email','$komentar')");
 		
 		// Show message when user added
         //echo
@@ -127,7 +127,7 @@ $warna=array_rand($bg,2);
         
         echo "<font color='white'>Terimakasi atas Komentarnya</font><br>";
         
-	}
+	//}
 	?>
         <!--p style="font-size:20px;  text-align:center; color=yellow;  margin-top:25px">
 	<a href="komentar.php" style="color:yellow;">Baca Komentar</a>
@@ -146,8 +146,8 @@ $warna=array_rand($bg,2);
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?php echo base_url()?>assets/vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url()?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
 
